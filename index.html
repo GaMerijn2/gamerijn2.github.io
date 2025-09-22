@@ -1,158 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Merijn Florie Portfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
-    <link rel="stylesheet" href="assets/css/aboutme.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Max Performance Tuning</title>
+    <link rel="stylesheet" href="css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <img src="assets/_images/optimized/logos/Manderijn-Logo.png" class="logo">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="project.html" style="    color: #F25C05;">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <div class="bg-blur"><div class="bg-cover" aria-hidden="true"></div></div>
+
+    <header class="site-header">
+        <div class="header-bg-shapes" aria-hidden="true"></div>
+        <img src="/images/unoptimized/MaxPerformance_Logo/MaxPerformanceTuning_Image.png" alt="Max Performance Tuning Logo" class="logo" />
+        <h1 class="visually-hidden">Max Performance Tuning</h1>
+    </header>
+
+    <main>
+    <section class="hero">
+        <div class="intro">
+            <img src="/images/unoptimized/MaxPerformance_Logo/MaxPerformanceTuning_Image.png" alt="Logo" class="intro-logo" />
+            <h2>Uw professional in chiptuning &amp; software optimalisatie</h2>
+            <p>Voor alle merken en modellen auto's, bedrijfswagens, campers, vrachtwagens, boten en motoren</p>
+
+            <nav class="intro-links">
+            <a href="#projects">Projecten</a>
+            <a href="#diensten">Diensten</a>
+            <a href="#contact" class="contact-button">Contact</a>
             </nav>
         </div>
-    </header>
-    <div class="mainpage">
-        <div class="intro">
-            <h1>Hi, I'm Merijn</h1>
-            <p class="intro-description">I’m a game developer who loves creating games. I specialize in <span class="highlight">Unity</span> and <span class="highlight">C#</span>. I currently study at Media College Amsterdam. My goal is to make enjoyable and fun games for everyone.</p>
-        </div>        
 
-        <div class="projects">
-            <h2>Highlighted Projects</h2>
-            <div class="project-container">
-                <!-- Left and right arrows for navigation -->
-                <span class="arrow arrow-left">&#8249;</span>
-                <span class="arrow arrow-right">&#8250;</span>
+    <section class="projects" id="projects" aria-label="Homepage foto’s">
+        <div class="project-container">                    
+            <button class="arrow arrow-left" aria-label="Vorige">&#8249;</button>
+                <button class="arrow arrow-right" aria-label="Volgende">&#8250;</button>
+                <div class="project active" data-title="STAGE 1 VANAF €199,-">
+                    <img src="/images/unoptimized/TrackCar-InMotion_16-9.png" alt="Stage 1" />
+                </div>
+                <div class="project" data-title="STAGE 2 VANAF €249,-">
+                    <img src="/images/unoptimized/TrackCar_16-9.png" alt="Stage 2" />
+                </div>
+                <div class="project" data-title="POPS & BANGS VANAF €99,-">
+                    <img src="/images/unoptimized/ActionPhoto_16-9.png" alt="Pops & Bangs" />
+                </div>
+                <div class="dots" role="tablist" aria-label="Slides"></div>
+            </div>
+        </section>
+    </section>
 
-                <!-- Project 1 -->
-                <div class="project active" style="background-image: url(assets/_images/optimized/project/ScopiDroneHomepage.png);">
-                    <a href="project.html?project=1">
-                        <div class="text-overlay"> <!-- New overlay div -->
-                            <h3>Scopi Drone</h3>
-                            <p>A enemy called "Scopi" for the game "Operation Starfall".</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Project 2 -->
-                <div class="project" style="background-image: url(/assets/_images/optimized/project/2D2DBanner.png);">
-                    <a href="project.html?project=2">
-                        <div class="text-overlay"> <!-- New overlay div -->
-                            <h3>2D2D</h3>
-                            <p>A gamejam game made in 3 days by 3 devs.</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Project 3 -->
-                <div class="project" style="background-image: url(/assets/_images/optimized/project/image_2024-09-26_230050491.png);">
-                    <a href="project.html?project=3">
-                        <div class="text-overlay"> <!-- New overlay div -->
-                            <h3>Vertical Slice</h3>
-                            <p>A vertical slice from the game: "Super Smash Bros - Ultimate".</p>
-                        </div>
-                    </a>
-                </div>
+        <div class="options">
+            <div aria-label="Diensten" id="diensten">
+                <article class="card">
+                    <h2>Diensten</h2>
+                    <ul class="diensten-list">
+                        <li>Stage 1 | ECU software optimalisatie</li>
+                        <li>Stage 2 | ECU software optimalisatie</li>
+                        <li>
+                        Stage 1 | TCM software optimalisatie
+                        <p>(automatische versnellingsbak) DSG/PDK/ZF/G-tronic/CVT</p>
+                        </li>
+                        <li>
+                        Stage 2 | TCM software optimalisatie
+                        <p>(automatische versnellingsbak) DSG/PDK/ZF/G-tronic/CVT</p>
+                        </li>
+                        <li>Pops and Bangs</li>
+                        <li>Bedrijfswagens | EGR, Adblue, DPF</li>
+                    </ul>
+                </article>
             </div>
         </div>
+        <div class="options">
+            <section class="info-cards">
+                <div>
+                    <article class="card">
+                        <h2>Wat is Chiptuning?</h2>
+                        <p>Chiptuning is een techniek waarmee de motorprestaties van je auto worden geoptimaliseerd door de software in de motorcomputer (ECU) aan te passen. </p>
+                        <br>
+                        <p>Door deze software-updates haal je meer <span style="color: var(--brand);">vermogen</span>, <span style="color: var(--brand);">koppel</span>, en <span style="color: var(--brand);">efficiëntie</span> uit je motor. </p>
+                        <p>Het proces is snel en eenvoudig uit te voeren door een professionele tuner. </p>
+                        <br>
+                        <p>Of je nu meer souplesse wilt, vlotter wilt inhalen, of jouw auto beter wilt laten optrekken, chiptuning biedt talloze voordelen.</p>
+                    </article> 
+                </div>
+                <div>
+                    <article class="card">
+                        <h2>Het Chiptuning Proces</h2>
+                        <p>Het proces begint met een grondige diagnose van je voertuig. Daarna wordt de motorcomputer uitgelezen om de huidige instellingen te begrijpen.</p>
+                        <br>
+                        <p>Vervolgens worden de nodige aanpassingen doorgevoerd, zoals het optimaliseren van de <span style="color: var(--brand);">brandstofinjectie</span>, <span style="color: var(--brand);">ontstekingstiming</span> en <span style="color: var(--brand);">turbodruk</span>.</p>
+                        <br>
+                        <p>Het resultaat? Meer vermogen, een verbeterde rijervaring en een beter rijgedrag van je auto.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
 
-        <div id="about" class="aboutme">
-            <div class="aboutmetextdiv">
-                <h2 style="padding-top: 10px; padding-bottom: 20px; font-size: 3vw;">About Me</h2>
-
-                <img src="assets/_images/optimized/My-Photo.jpg" alt="A Picture Of Me" class="aboutme-image">
-                <p>
-                    Welcome to my portfolio!
-                    <br><br>
-                    <h2 class="aboutmesubheader">Introduction</h2>
-                    My name is Merijn Florie, I am a 17-year-old student driven by game development.
-                    <br>
-                    Currently, I'm studying <b>Game Development</b> at <b>Media College</b> in Amsterdam, where I learn how to convert <b>my ideas</b> into <b>working games</b>.
-                    <br><br>
-                    <h2 class="aboutmesubheader">Progress</h2>
-                    Throughout my study, I've gained a lot of experience in <b>designing</b> and <b>programming</b> games.
-                    <br><br>
-                    From building simple games for <b>small</b> mechanics, to implementing <b>complex</b> mechanics like a feature that plays sounds in a random order.
-                    <br>
-                    I'm always seeking <b>new challenges</b> to enhance my skills.
-                    <br><br>
-                    <h2 class="aboutmesubheader">Hard Skills</h2>
-                    I use the engine <b>Unity</b> to create my games and I code my mechanics with <b>C#</b>,
-                    <br>
-                    and I'm most interested in <b>3D games</b>, <b>top-down games</b>, <b>shooters</b> and <b>survival</b> / <b>sandbox</b> games.
-                    <br><br>
-        
-                    <h2 class="aboutmesubheader">Soft Skills</h2>
-                    My projects have taught me to think <b>creatively</b>, <b>solve problems</b>, and work <b>effectively</b> within a team.
-                    I am always able to <b>adapt and learn</b> new ways to work in a team.
-                    <br><br>
-                    <h2 class="aboutmesubheader">Ideal Workspace</h2>
-                    I would like to get an <b>internship</b> at a company with around
-                    <br>
-                    <b>10-20</b> people.
-                    I work best in a <b>calm</b> environment and in a <b>small</b> team and
-                    <br>
-                    I hope I can <b>learn</b> more about the professional work.
-                    <br><br>
-                    <h2 class="aboutmesubheader">Hobbies</h2>
-                    Outside of my studies, I have a deep love for <b>gaming</b>.
-                    <br>
-                    From intense shooters like <b>Rainbow Six Siege</b> and <b>Valorant</b>, to the creative freedom of sandbox games like <b>Minecraft</b> and <b>Terraria</b>,
-                    <br><br>
-                    <h2 class="aboutmesubheader">Fascination and Inspiration</h2>
-                    I've always been fascinated by the <b>diversity</b> and <b>possibilities</b> of how you can play a game,
-                    and use its features to create something unique.
-                    <br>
-                    It's this <b>passion</b> that has driven me to become a game developer.
-                    <br><br>
-                    My inspiration comes from the games I play and the stories they tell.
-                    <br>
-                    I'm determined to make my own contribution to this creative field and create games that inspire,
-                    <b>challenge</b>,
-                    and <b>entertain</b> people.
-                    <br>
-                    My <b>ultimate ambition</b> is to be part of a team that develops <b>groundbreaking</b> games that change the industry.
-                    <br><br>
-                    Thank you for visiting my portfolio.
-                    <br>
-                    I look forward to continuing my journey in game development.
-                </p>
+        <section class="contact" id="contact">
+            <div class="contact-card">
+                <h2>Neem contact op</h2>
+                <form class="contact-form" action="#" method="post" novalidate>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="name">Naam *</label>
+                            <input type="text" id="name" name="name" placeholder="Uw naam" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">E‑mail *</label>
+                            <input type="email" id="email" name="email" placeholder="naam@voorbeeld.nl" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Telefoon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678" inputmode="tel">
+                        </div>
+                        <div class="form-field full">
+                            <label for="message">Bericht *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Waarmee kunnen we helpen?" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="contact-submit">Versturen</button>
+                </form>
             </div>
-        </div>
-        
-        
-        
-    </div>
-    
-    <div id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-icons">
-            <a href="mailto:merijn@florie.nl" title="Email">
-                <img src="assets/_images/optimized/logos/gmail.png" alt="Email Icon" class="contact-icon">
-            </a>
-            <a href="https://linkedin.com/in/Merijn-Florie" target="_blank" title="LinkedIn">
-                <img src="assets/_images/optimized/logos/icons8-linkedin-48.png" alt="LinkedIn Icon" class="contact-icon">
-            </a>
-            <a href="https://github.com/GaMerijn2" target="_blank" title="GitHub">
-                <img src="assets/_images/optimized/logos/icons8-github-96.png" alt="GitHub Icon" class="contact-icon">
-            </a>
-        </div>
+        </section>
+    </main>
+
+    <div id="lighthouse" class="lighthouse hidden">
+        <span class="close" aria-label="Sluit">&times;</span>
+        <img id="lighthouse-img" src="" alt="Slide image">
+        <div class="lighthouse-title" id="lighthouse-title"></div>
     </div>
 
-    <script src="assets/scripts/scripts.js"></script>
+    <footer class="site-footer">
+        &copy; 2025 Max Performance Tuning •
+        <a href="https://maxperformance.nl" target="_blank" rel="noopener">maxperformance.nl</a>
+    </footer>
+
+    <!-- <script src="js/cards.js"></script> -->
+    <script src="js/app.js"></script>
 </body>
 </html>
