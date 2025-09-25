@@ -120,8 +120,13 @@
                             <textarea id="message" name="message" rows="6" placeholder="Waarmee kunnen we helpen?" required></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="contact-submit">Versturen</button>
-                </form>
+                    <!-- <button type="submit" class="contact-submit">Versturen</button> -->
+                        <button class="g-recaptcha contact-submit"
+                            data-sitekey="6Lf-OtUrAAAAAKNGY2J4nB_63XQb052SKfcAeHyj" 
+                            data-callback='onSubmit' 
+                            data-action='submit'>Versturen
+                        </button>
+                    </form>
             </div>
         </section>
     </main>
@@ -138,6 +143,12 @@
     </footer>
 
     <!-- <script src="js/cards.js"></script> -->
+      <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
     <script src="js/app.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
